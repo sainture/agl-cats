@@ -1,0 +1,11 @@
+<ng-container *ngIf="result; else loading">
+  <div *ngFor="let item of result | keyvalue" class="item">
+    <div class="gender">{{ item.key }}</div>
+    <ul>
+      <li *ngFor="let pet of item.value">
+        {{ pet }}
+      </li>
+    </ul>
+  </div>
+</ng-container>
+<ng-template #loading>Loading...</ng-template>

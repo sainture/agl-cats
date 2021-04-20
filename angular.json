@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "agl-cats"
+    }
+  },
+  "defaultProject": "agl-cats",
+  "cli": {
+    "analytics": false
+  }
 }
